@@ -6,9 +6,9 @@ This particular specimen will be of the `singly linked list` variety.
 
  The super cool thing about linked lists are that there are always *more cool and fun* methods to add and challenges to solve. 
  
- We are going to cover the basics of how a linked list works and setup some basic methods to manage the data inside of it.
+ We are going to cover the basics of how a linked list works and setup some core methods to manage the data inside of it.
 
-![mr links](/linky-stinky.png)
+![mr. links](/linky-stinky.png)
 
 A linked list consists of two classes: the main `LinkedList` class that stores all the methods and a reference to the `head` of the list (the first thing in it). The other class is a `Node` that stores a data value and the reference to the next node.
 
@@ -74,6 +74,8 @@ class LinkedList:
   
   # remove the last node in the list and return it
   def pop(self):
+    # check if the list is empty first to avoid bugs
+    if self.is_empty(): return None
     # keep track of the previous node to nullify it
     previous_node = None
     # start from the head
@@ -111,29 +113,6 @@ class LinkedList:
   # make our linked list work with len()
   def __len__(self):
     return self.length
-
-  # return the sum of all the values in the linked list
-  def sum(self):
-    pass
-
-  # return a [list] (regular python list) from all the values in the linked list
-  def to_list(self):
-    pass
-
-  # search for a given value in the list. 
-  # If it is found, return True otherwise return False
-  def search(self, value):
-    pass
-  
-  # add a node with the given value to the beginning of the list
-  # this doesn't need a loop -- remember the head is the beginning 
-  # of the list. unshift should return the new length of the list
-  def unshift(self, value):
-    pass
-
-  # reomve the value at beginning of the list
-  def shift(self):
-    pass
 ```
 
 ## You Do:
@@ -179,4 +158,4 @@ These methods don't need a loop to be completed, and both deal with operations o
 
 Try to think of other methods that could trick out your linked list.
 
-*examples : a method to replace a insert a node at a certain index or a for_each method that does a callback on every node in the list*
+*examples: a method to insert a node at a certain index or a for_each method that does a callback function on every node in the list*
