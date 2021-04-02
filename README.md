@@ -156,4 +156,4 @@ These methods don't need a loop to be completed, and both deal with operations o
 
 Try to think of other methods that could trick out your linked list.
 
-*examples : a method to replace a insert a node at a certain index or a for_each method that does a callback on every node in the list*
+*examples: a method to insert a node at a certain index or a for_each method that does a callback function on every node in the list*
