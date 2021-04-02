@@ -2,7 +2,7 @@
 
 ## We are going to be building a new data type: the `linked list!` 🎉
 
-This particular specimin will be of the `singlely linked list` variety.
+This particular specimen will be of the `singly linked list` variety.
 
  The super cool thing about linked lists are that there are always *more cool and fun* methods to add and challenges to solve. 
  
@@ -24,7 +24,7 @@ The `LinkedList` class is being imported into `list_testing.py` so we can try ou
 
 Build a linked list!
 
-```python=
+```python
 # ## # ## # ## # ## 
 # A single node of data in our list
 class Node:
@@ -135,3 +135,48 @@ class LinkedList:
   def shift(self):
     pass
 ```
+
+## You Do:
+
+Finish building out the rest of the methods in the `LinkedList` class
+
+### Methods that need a loop
+
+To finish these methods, you will have to loop across the linked list.
+
+```python
+  # return the sum of all the values in the linked list
+  def sum(self):
+    pass
+
+  # return a [list] (regular python list) from all the values in the linked list
+  def to_list(self):
+    pass
+
+  # search for a given value in the list. 
+  # If it is found, return True otherwise return False
+  def search(self, value):
+    pass
+```
+
+### Methods that don't need a loop:
+
+These methods don't need a loop to be completed, and both deal with operations on the `head node` of the list.
+
+```python
+  # add a node with the given value to the beginning of the list
+  # this doesn't need a loop -- remember the head is the beginning 
+  # of the list. unshift should return the new length of the list
+  def unshift(self, value):
+    pass
+
+  # reomve the value at beginning of the list
+  def shift(self):
+    pass
+```
+
+### If you finish these
+
+Try to think of other methods that could trick out your linked list.
+
+*examples : a method to replace a insert a node at a certain index or a for_each method that does a callback on every node in the list*
