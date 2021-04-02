@@ -74,6 +74,8 @@ class LinkedList:
   
   # remove the last node in the list and return it
   def pop(self):
+    # check if the list is empty first to avoid bugs
+    if self.is_empty(): return None
     # keep track of the previous node to nullify it
     previous_node = None
     # start from the head
