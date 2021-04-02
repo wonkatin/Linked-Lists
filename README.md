@@ -1,3 +1,30 @@
+# ⛓ Linked List ⛓
+
+## We are going to be building a new data type: the `linked list!` 🎉
+
+This particular specimin will be of the `singlely linked list` variety.
+
+ The super cool thing about linked lists are that there are always *more cool and fun* methods to add and challenges to solve. 
+ 
+ We are going to cover the basics of how a linked list works and setup some basic methods to manage the data inside of it.
+
+![mr links](/linky-stinky.png)
+
+A linked list consists of two classes: the main `LinkedList` class that stores all the methods and a reference to the `head` of the list (the first thing in it). The other class is a `Node` that stores a data value and the reference to the next node.
+
+Since the `LinkedList` class only knows about the the `head Node`, we have to zip across the list by starting at the head and asking each node what the next node is.
+
+#### In this repo:
+
+There is a `LinkedList` Class and `Node` in the file 'LinkedList.py` that we are going to build out together.
+
+The `LinkedList` class is being imported into `list_testing.py` so we can try out our linked list easier.
+
+## We Do:
+
+Build a linked list!
+
+```python=
 # ## # ## # ## # ## 
 # A single node of data in our list
 class Node:
@@ -107,3 +134,4 @@ class LinkedList:
   # reomve the value at beginning of the list
   def shift(self):
     pass
+```
