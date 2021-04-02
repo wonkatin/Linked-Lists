@@ -6,6 +6,8 @@ our_list = LinkedList()
 
 print(our_list.is_empty())
 
+print(our_list.pop())
+
 our_list.append(1)
 our_list.append(2)
 our_list.append(3)
