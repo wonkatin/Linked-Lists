@@ -6,9 +6,9 @@ This particular specimen will be of the `singly linked list` variety.
 
  The super cool thing about linked lists are that there are always *more cool and fun* methods to add and challenges to solve. 
  
- We are going to cover the basics of how a linked list works and setup some basic methods to manage the data inside of it.
+ We are going to cover the basics of how a linked list works and setup some core methods to manage the data inside of it.
 
-![mr links](/linky-stinky.png)
+![mr. links](/linky-stinky.png)
 
 A linked list consists of two classes: the main `LinkedList` class that stores all the methods and a reference to the `head` of the list (the first thing in it). The other class is a `Node` that stores a data value and the reference to the next node.
 
